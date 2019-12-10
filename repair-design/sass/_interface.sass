@@ -1,19 +1,26 @@
 .button
-  padding: 13px 20px
+  padding: 12px 24px
   border: none
   border-radius: 2px
   text-transform: uppercase
   font-size: 0.93rem
   &:hover
     cursor: pointer
+  &--order
+    background-color: $primary
+    color: $light
+    box-shadow: 0px 5px 15px rgba($primary, 0.2)
+    transition: box-shadow 0.3s
   &--primary
     background-color: $primary
     color: $light
     box-shadow: 0px 5px 15px rgba($primary, 0.2)
     transition: box-shadow 0.3s
+    padding: 1.3rem 1.91rem
     &:hover
       box-shadow: none
   &--outline
     border: 1px solid $light
     background-color: transparent
     color: $light
+    padding: 1.3rem 3rem
