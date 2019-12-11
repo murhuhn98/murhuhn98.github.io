@@ -38,6 +38,30 @@
   .hero
     &__scroll-down
       display: none
-  
+@media screen and ( max-width: 760px )
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 5.642rem
+.card
+  &__text
+    margin-left: 0
+@media screen and ( min-width: 760px )
+  .row
+    flex-direction: row
+    justify-content: space-between
+  .card 
+    flex-basis: 32%
+    &__text
+      margin: 0 auto
+      margin-top: -9.3rem
+  .design
+    background-color: $light
+  .section-title
+    &__description
+      color: $dark
+      max-width: 40rem
   
     
