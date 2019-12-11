@@ -320,7 +320,7 @@ template {
   display: none; }
 
 .button {
-  padding: 12px 24px;
+  padding: 11px 20px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -379,12 +379,12 @@ img {
     .section-title__description {
       max-width: 21.86rem;
       margin: auto;
-      margin-top: 1.64rem;
-      font-size: 1.07rem;
+      margin-top: 1.35rem;
+      font-size: 1.42rem;
       line-height: 135.84%; }
 
 .container {
-  width: 85%;
+  width: 90%;
   max-width: 1256px;
   margin: auto; }
 
@@ -405,7 +405,8 @@ img {
 .logo {
   color: #E3B873;
   text-transform: uppercase;
-  font-size: 1.075rem; }
+  font-family: 'Futura Demi';
+  font-size: 1rem; }
 
 .nav__item {
   text-decoration: none;
@@ -452,7 +453,7 @@ img {
     line-height: 140%; }
   .hero__button {
     font-family: 'Futura Demi';
-    margin-right: 20px; }
+    margin-right: 1.28rem; }
   .hero__instagram {
     left: 0;
     top: 0;
@@ -520,12 +521,13 @@ img {
   justify-content: space-between; }
 
 .col {
-  flex-basis: 32%; }
+  flex-basis: 31%;
+  margin-right: 2.12rem; }
 
 .card__text {
   position: relative;
   margin: 0 auto;
-  margin-top: -9.3rem;
+  margin-top: -8.8rem;
   max-width: 23.6rem;
   padding: 1.79rem 2.14rem;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
@@ -538,9 +540,9 @@ img {
   font-size: 1.29rem; }
 
 .card__list {
-  padding: 0 0 0 1 rem;
+  padding: 0 0 0 1rem;
   margin: 0;
-  margin-bottom: 2.07rem;
+  margin-bottom: 0.48rem;
   font-size: 1.07rem;
   line-height: 1.79rem;
   color: #959595; }
@@ -560,7 +562,7 @@ img {
   background-color: #131313; }
   .design__section-title {
     color: #ffffff;
-    margin-bottom: 2.7rem; }
+    margin-bottom: 3.2rem; }
   .design__card {
     margin-bottom: 5.64rem; }
 
@@ -608,7 +610,7 @@ img {
 
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 12px; }
+    font-size: 14px; }
   .nav__item {
     margin-right: 1rem; } }
 
@@ -666,6 +668,9 @@ img {
       margin-top: -9.3rem; }
   .design {
     background-color: #ffffff; }
+  .section-title__heading {
+    color: #131313;
+    font-size: 1.428rem; }
   .section-title__description {
     color: #131313;
-    max-width: 40rem; } }
+    max-width: 52.92rem; } }
