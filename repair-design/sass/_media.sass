@@ -16,7 +16,33 @@
     &-slider
       &-image
         margin-top: 0
+@media screen and ( max-width: 760px )
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 5.642rem
+  .card
+    &__text
+      margin-left: 0
+  .design
+    background-color: $dark
+    &__section-title
+      color: $light
+    &__card
+      margin-bottom: 5.64rem
+  .mobile-order-top
+    order: -1
+  .col
+    &-50
+      width: 100%
+
 @media screen and ( max-width: 576px )
+  .hero
+    height: unset
+    &::after
+      display: none
   .section
     &-title
       &__description
@@ -43,6 +69,7 @@
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
+
 @media screen and ( max-width: 376px )
   .container
     width: 90% 
@@ -76,6 +103,8 @@
       font-size: 1.25rem
       margin-bottom: 2.28rem
   .col
+    &-30
+      margin: 0
     &-50
       width: 80%
   .section
@@ -83,9 +112,10 @@
       &__heading
           &--primary
           text-align: center
-          font-size: 1.43rem
+          font-size: 1.57rem
           line-height: 157%
           font-weight: normal
+          margin-bottom: 1rem
       &__word
         display: block
         &::after
@@ -110,7 +140,7 @@
         font-size: 0.92rem
     &__item:nth-child(n+8)
       display: none
-    &__item:nth-child(7)
+    &__item--after:nth-child(7)
       &::after
         content: ' ...'
     &__title
@@ -140,31 +170,18 @@
         line-height: 1.4rem
 @media screen and ( max-height: 510px )
   .hero
-    &__scroll-down
-      display: none
     &::after
       display: none
-@media screen and ( max-width: 760px )
-  .row
-    flex-direction: column
-    align-items: center
-  .types
-    &__card
-      margin-bottom: 5.642rem
-  .card
-    &__text
-      margin-left: 0
-  .design
-    background-color: $dark
-    &__section-title
-      color: $light
-    &__card
-      margin-bottom: 5.64rem
-  .mobile-order-top
-    order: -1
-  .col
-    &-50
-      width: 100%
+    &__scroll-down
+      display: none
+@media screen and ( max-height: 600px )
+  .hero
+    height: 707px
+@media screen and ( max-height: 476px )
+  .hero
+    height: 476px
+        
+    
     
 
       
