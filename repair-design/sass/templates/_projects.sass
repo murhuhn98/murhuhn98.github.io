@@ -3,6 +3,9 @@
     display: flex
     flex-wrap: wrap
     margin-bottom: 4.5rem
+    &r
+      &-image
+        margin-top: -15rem
     &__text
       flex-basis: 50%
       padding-bottom: 2rem
@@ -12,7 +15,7 @@
       line-height: 1.78rem
       text-transform: uppercase
       color: $primary
-      margin-bottom: 0.5rem
+      margin-bottom: 0.17rem
     &__value
       font-size: 1.07rem
   &-pagination
@@ -20,6 +23,8 @@
       width: auto
     &-bullet
       background-color: rgba($light, 0.3)
+      width: 9px
+      height: 9px
       &-active
         background-color: $light
   &-button
@@ -38,5 +43,10 @@
 .swiper-container-horizontal > .swiper-pagination-bullets
   width: auto
   bottom: -2px
+.section
+  &-title
+    &__text
+      &--projects
+        margin-bottom: 2rem
       
         
