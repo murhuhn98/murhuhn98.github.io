@@ -894,7 +894,7 @@ img {
       font-size: 1rem;
       line-height: 1.4rem; } }
 
-@media screen and (max-height: 510px) {
+@media screen and (max-height: 600px) {
   .hero::after {
     display: none; }
   .hero__scroll-down {
@@ -903,7 +903,3 @@ img {
 @media screen and (max-height: 600px) {
   .hero {
     height: 476px; } }
-
-@media screen and (min-height: 601px) {
-  .hero {
-    height: 700px; } }
