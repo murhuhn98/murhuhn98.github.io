@@ -379,6 +379,14 @@ template {
     cursor: pointer;
     margin-right: 0.64rem; }
 
+#button-up {
+  background: url("../img/arrow-up.svg") no-repeat 7px 11px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 70px; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -895,11 +903,9 @@ img {
       line-height: 1.4rem; } }
 
 @media screen and (max-height: 600px) {
-  .hero::after {
-    display: none; }
-  .hero__scroll-down {
-    display: none; } }
-
-@media screen and (max-height: 600px) {
   .hero {
-    height: 476px; } }
+    height: 476px; }
+    .hero::after {
+      display: none; }
+    .hero__scroll-down {
+      display: none; } }
