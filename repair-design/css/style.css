@@ -779,10 +779,8 @@ img {
     width: 100%; } }
 
 @media screen and (max-width: 576px) {
-  .hero {
-    height: unset; }
-    .hero::after {
-      display: none; }
+  .hero::after {
+    display: none; }
   .section-title__description {
     max-width: 21.86rem;
     font-size: 1.07rem; }
@@ -903,3 +901,7 @@ img {
 @media screen and (min-height: 700px) {
   .hero {
     height: 700px; } }
+
+@media screen and (min-height: 100px) {
+  .hero {
+    height: 510px; } }
