@@ -73,6 +73,7 @@
   .container
     width: 90% 
   .hero
+    height: unset
     &__content
       max-width: 23.3rem
     &__button
@@ -172,12 +173,14 @@
       display: none
     &__scroll-down
       display: none
-@media screen and ( min-height: 700px )
+@media screen and ( max-height: 600px  )
   .hero
-    height: 700px
-@media screen and ( min-height: 100px  )
+     height: 476px
+@media screen and ( min-height: 601px  )
   .hero
-    height: 510px
+     height: 700px
+  
+  
   
   
     
