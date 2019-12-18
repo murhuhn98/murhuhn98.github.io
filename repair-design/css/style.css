@@ -385,7 +385,8 @@ template {
   bottom: 50px;
   right: 50px;
   width: 50px;
-  height: 70px; }
+  height: 70px;
+  z-index: 1; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
