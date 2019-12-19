@@ -62,4 +62,15 @@ $(document).ready(function () {
   bullets.css('left', prev.width() + 35);
 
   new WOW().init();
+
+  var title = $('.section-title__heading'),
+        win = $(window),
+        windowHeight = win.height();
+    win.scroll(function () {
+        var scrollPos = $(this).scrollTop(),
+            titlePos = title.offset().top;
+        if (scrollPos >= titlePos - windowHeight/1.5) {
+            title.addClass('fadeIn');
+        }    
+    });
 });

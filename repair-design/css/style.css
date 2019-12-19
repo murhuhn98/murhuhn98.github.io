@@ -415,7 +415,8 @@ img {
     .section-title__heading {
       font-family: 'Yeseva One', cursive;
       text-transform: uppercase;
-      line-height: 138.6%; }
+      line-height: 138.6%;
+      animation: fadeIn 5s; }
       .section-title__heading--primary {
         color: #E3B873;
         font-size: 1.75rem;
@@ -444,6 +445,9 @@ img {
         width: 32px;
         height: 2px;
         background-color: #E3B873; }
+
+.fadeIn {
+  animation: fadeIn 5s; }
 
 .container {
   width: 90%;
@@ -653,7 +657,8 @@ img {
 
 .control__section-title {
   margin-bottom: 2.214rem;
-  margin-top: -30rem; }
+  margin-top: -30rem;
+  animation: fade 5s; }
 
 .control__video {
   position: relative;
@@ -940,6 +945,28 @@ img {
     font-size: 14px;
     line-height: 158.48%;
     font-weight: normal; }
+  .control {
+    background-color: #131313;
+    color: #ffffff; }
+    .control__video {
+      background: #131313 url(../img/video-mask-mobile.jpg);
+      max-width: 24rem;
+      min-height: 14.7rem; }
+    .control__text {
+      line-height: 169.8%;
+      font-size: 1rem; }
+    .control__input-group--big-margin {
+      margin-bottom: 4.5rem; }
+    .control__policy-label {
+      justify-content: flex-start;
+      margin-bottom: 5.89rem; }
+    .control__button {
+      order: 1;
+      margin: auto;
+      padding: 1.2857rem 9.5rem;
+      border-radius: unset; }
+  .video__play {
+    max-width: 70px; }
   .card__list {
     line-height: 1.62rem;
     font-size: 0.92rem;
@@ -985,3 +1012,9 @@ img {
       display: none; }
     .hero__scroll-down {
       display: none; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
