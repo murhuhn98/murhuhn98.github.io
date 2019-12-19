@@ -962,7 +962,8 @@ img {
     .control__label {
       font-size: 1.05rem; }
     .control__input {
-      font-size: 1.28rem; }
+      font-size: 1.28rem;
+      color: #ffffff; }
     .control__policy-label {
       justify-content: flex-start;
       margin-bottom: 5.89rem; }
