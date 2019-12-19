@@ -28,6 +28,21 @@ $(document).ready(function () {
     modal.toggleClass('modal--visible');
   });
 
+  
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      $('#button-up').fadeIn('slow');
+  } else {
+      $('#button-up').fadeOut();
+  }
+});
+
+  $('#button-up').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+  }, 500);
+});
+
   var mySwiper = new Swiper ('.swiper-container', {
       loop: true,
       pagination: {
@@ -44,21 +59,5 @@ $(document).ready(function () {
     var bullets = $('.swiper-pagination');
 
     next.css('left', prev.width() + 35 + bullets.width() + 35 )
-    bullets.css('left', prev.width() + 35 )
-
-
-  $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
-          $('#button-up').fadeIn('slow');
-      } else {
-          $('#button-up').fadeOut();
-      }
-  });
-  
-  $('#button-up').click(function () {
-      $('body,html').animate({
-          scrollTop: 0
-      }, 500);
-  });
-
+    bullets.css('left', prev.width() + 35 );
 });
