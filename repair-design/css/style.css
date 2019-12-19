@@ -955,8 +955,14 @@ img {
     .control__text {
       line-height: 169.8%;
       font-size: 1rem; }
-    .control__input-group--big-margin {
-      margin-bottom: 4.5rem; }
+    .control__input-group {
+      flex-basis: 100%; }
+      .control__input-group--big-margin {
+        margin-bottom: 4.5rem; }
+    .control__label {
+      font-size: 1.05rem; }
+    .control__input {
+      font-size: 1.28rem; }
     .control__policy-label {
       justify-content: flex-start;
       margin-bottom: 5.89rem; }
