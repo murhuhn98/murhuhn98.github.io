@@ -63,14 +63,49 @@ $(document).ready(function () {
 
   new WOW().init();
 
-  var title = $('.section-title__heading'),
-        win = $(window),
-        windowHeight = win.height();
-    win.scroll(function () {
-        var scrollPos = $(this).scrollTop(),
-            titlePos = title.offset().top;
-        if (scrollPos >= titlePos - windowHeight/1.5) {
-            title.addClass('fadeIn');
-        }    
-    });
+
+
+  // Валидация формы
+
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // правило-объект (блок)
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      }
+    }
+  });
+
+  // маска для телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {
+    placeholder: "+7(___) ___-__-__"
+  })
+
+
+  // замена label на div
+
+  //$(".modal__button").click(function () {
+
+   // $('label.invalid').replaceWith("<div>");
+
+  //});
 });
