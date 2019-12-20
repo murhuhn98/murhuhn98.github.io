@@ -723,7 +723,8 @@ img {
   margin-bottom: -7px; }
 
 .control__button {
-  padding: 1.2857rem 4.7857rem; }
+  padding: 1.5rem 4.7857rem;
+  max-height: 4rem; }
 
 .control__policy {
   flex-basis: 100%;
