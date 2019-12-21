@@ -70,7 +70,6 @@ $(document).ready(function () {
   $('.footer__form').validate({
     errorClass: "invalid",
     rules: {
-      // строчное правило
       userName: {
         required: true,
         minlength: 2,
@@ -81,7 +80,8 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      userQuestion: "required"
     }, // сообщения
     messages: {
       userName: {
@@ -93,7 +93,8 @@ $(document).ready(function () {
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
-      }
+      },
+      userQuestion: "Заполните поле"
     }
   });
 
@@ -107,7 +108,6 @@ $(document).ready(function () {
   $('.modal__form').validate({
     errorClass: "invalid",
     rules: {
-      // строчное правило
       userName: {
         required: true,
         minlength: 2,
@@ -142,7 +142,6 @@ $(document).ready(function () {
   $('.control__form').validate({
     errorClass: "invalid",
     rules: {
-      // строчное правило
       userName: {
         required: true,
         minlength: 2,
