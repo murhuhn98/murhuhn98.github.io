@@ -391,7 +391,7 @@ template {
   height: 70px;
   z-index: 2; }
 
-label.invalid {
+div.invalid {
   color: tomato; }
 
 input.invalid {
